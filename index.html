@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <title>Register Card</title>
+  </head>
+  <body>
+    <article class="container-card">
+      <div class="hidden-line-h1">
+        <h1 class="title-card">Register</h1>
+      </div>
+      <p class="text-under-h1">
+        Create your account.It's free and only takes a minute
+      </p>
+      <form class="form">
+        <fieldset>
+          <legend class="legend-fl-name">
+            <label class="label-fl-name">
+              <input
+                class="reg-input"
+                autofocus
+                autocomplete="name"
+                name="first-name"
+                placeholder="First Name"
+                type="text"
+                pattern="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+"
+                required
+              />
+            </label>
+            <label class="label-fl-name">
+              <input
+                class="reg-input"
+                autocomplete="cc-name"
+                name="last-name"
+                placeholder="Last Name"
+                type="text"
+                pattern="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+"
+                required
+              />
+            </label>
+          </legend>
+        </fieldset>
+        <label>
+          <input
+            class="reg-input"
+            name="email"
+            autocomplete="email"
+            placeholder="Email"
+            pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+            required
+            type="email"
+          />
+        </label>
+        <label>
+          <input
+            class="reg-input"
+            autocomplete="new-password"
+            name="password"
+            required
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            placeholder="Password"
+            type="password"
+          />
+        </label>
+        <label>
+          <input
+            class="reg-input"
+            autocomplete="new-password"
+            name="confirm-password"
+            required
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            placeholder="Confirm Password"
+            type="password"
+          />
+        </label>
+        <label class="label-checkbox-1">
+          <input
+            class="label-checkbox"
+            type="checkbox"
+            name="check-prvc-policy"
+          />
+          I accept the
+          <a href="#" class="link-policy">Terms of use</a>
+          &
+          <a href="#" class="link-policy">Privacy Policy</a>
+        </label>
+        <button class="btn" type="submit">Register Now</button>
+      </form>
+    </article>
+  </body>
+</html>
